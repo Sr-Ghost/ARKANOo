@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARKANO</title>
+  <meta name="description" content="ARKANO | O melhor para comprar produtos digitais">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      animation: fadeIn 0.5s;
+    }
+
+    .modal-content {
+      background-color: #333;
+      color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      border-radius: 10px;
+      animation: slideIn 0.5s;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-content a {
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .modal-content a#whatsappLink {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .modal-content a#discordLink {
+      background-color: #7289DA;
+      color: white;
+    }
+
+    .modal-content a:hover {
+      opacity: 0.8;
+    }
+
+    .modal-description {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideIn {
+      from {transform: translateY(-50px);}
+      to {transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="conteudo">
+    <header>
+      <div class="logo">
+        <img src="images/Logo.png" alt="Logo da Loja">
+      </div>
+      <div class="nome-loja">
+        <a href="index.html">
+          <h1>ARKANO</h1>
+        </a>
+      </div>
+    </header>
+    <div class="zap-da-loja">
+      <a href="https://wa.me/5521974600254" target="_blank">
+        <img src="images/zaplogo.png" alt="Imagem do zap da Loja">
+      </a>
+    </div>
+    <main>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/Streaming.jpeg" alt="Streaming imagem">
+        <h2 class="nome-do-produto">🍿 Assinaturas Premium</h2>
+        <p class="valor-verdadeiro">Valor: R$ 4.90</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/Steam.png" alt="Contas Steam">
+        <h2 class="nome-do-produto">🎮 Contas Steam</h2>
+        <p class="valor-verdadeiro">Valor: R$ 4.90</p>
+      </div>
+      
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/Seguidores.png" alt="Seguidores">
+        <h2 class="nome-do-produto">🚀 Engajamento Social</h2>
+        <p class="valor-verdadeiro">1k Valor: R$ 20</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/RD.jpg" alt="Renda extra">
+        <h2 class="nome-do-produto">💸 Dinheiro Facil</h2>
+        <p class="valor-verdadeiro">Valor: R$ 2.90</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/Ftn.jpg" alt="Fortnite">
+        <h2 class="nome-do-produto">⛏ Contas Raras & V-bucks</h2>
+        <p class="valor-verdadeiro">Confira os Valores!</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/Roblox.webp" alt="Roblox">
+        <h2 class="nome-do-produto">🍉 Blox Fruits & Robux</h2>
+        <p class="valor-verdadeiro">Confira os Valores!</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/Discord.webp" alt="Discord">
+        <h2 class="nome-do-produto">🚀 Nitro, Contas & Membros</h2>
+        <p class="valor-verdadeiro">Valor: R$ 2.50</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/FFcodiguin.png" alt="FFcodiguin">
+        <h2 class="nome-do-produto">🔥 Codiguins & Diamantes</h2>
+        <p class="valor-verdadeiro">Valor: R$ 6.90</p>
+      </div>
+
+      <div class="produto" onclick="openModal('https://wa.me/5521974600254', 'https://discord.gg/PJSVxMT4s7')">
+        <img src="images/PackE.jpg" alt="Pack">
+        <h2 class="nome-do-produto">📦 Pack Cursos Pagos</h2>
+        <p class="valor-verdadeiro">Valor: R$ 6.50</p>
+      </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2>Escolha onde comprar</h2>
+        <a id="whatsappLink" href="#" target="_blank">WhatsApp</a>
+        <a id="discordLink" href="#" target="_blank">Discord</a>
+        <div class="modal-description">
+          <p>🔵 | Discord: Loja Oficial Com Entrega Automática & Vários Produtos Disponíveis.</p>
+          <p>🟢 | WhatsApp: Contato do Vendedor caso você queira fazer perguntas ou não tenha Discord para fazer as compras.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© ARKANO | Qualidade & Preço Baixo</p>
+    </footer>
+  </div>
+
+  <script>
+    function openModal(whatsappLink, discordLink) {
+        document.getElementById("whatsappLink").href = whatsappLink;
+        document.getElementById("discordLink").href = discordLink;
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close the modal when the user clicks anywhere outside of it
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+            closeModal();
+        }
+    }
+  </script>
+</body>
+</html>
